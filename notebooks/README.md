@@ -10,26 +10,42 @@ jupyter/inotebooks
 1. start a githubcodespace via a git repo
 2. using settings icon in lower left, select themes
 3. in terminal create the venv
-    1. cd notebooks/
-    2.  ls
-    3.  python -m venv myenv
-    4.  source myenv/bin/activate
-    5.  pip install --upgrade pip
-    6.  python -m pip install numpy
-        - python install -r requirements.txt
-    7. add .gitignore for myenv
-4. setup python inpreter for the workspace
+    
+    This varies for notebooks and webapps.  In this case I'll show how to do it for the notebooks
+    1. `cd notebooks`
+    2. `mkdir nbenv`
+    3. `cd nbenv` 
+    5.  `python -m venv nbenv`
+    6.  `source nbenv/bin/activate`
+        - at this point you should notice your prompt has a prefix of `(nbenv)` meaning the venv is operational
+    7.  `pip install --upgrade pip`
+    8.  `python -m pip install numpy`
+        - just to test that you can install `numpy`
+    9. `cd ..`
+        - For now, there is just one requirements.txt and its above this dir
+    9. `python install -r requirements.txt`
+        - this installs the common identified modules for the notebooks in this venv
+    7. `add .gitignore for nbenv`
+        - this is so that git does not try to CM your modules
+        - `echo nbenv/nbenv/ >> .gitignore`
+4. Install jupyter notebooks in vscode
+    1. click extensions in left sidebar
+    2. type jupyter<CR>
+    3. select jupyter from microsoft
+5. Setup python inpreter for the VS Code workspace
     1. cmd shift p to bring up command window
     2. type `Python: Select Interpreter`
-    3. Use browse capability to browse to `notebooks/myenv/bin/python3`
-5. Use requirements.txt to template a pandas install
-    1. contents of requirements.txt
-        > pandas
-    2. install pandas via requirements.txt
-        - `$ pip install -r requirements.txt`
+    3. click the use existing option 
+    3. Use browse capability to browse to `notebooks/nbenv/bin/python3`
+6. In the file menu, create a new notebook
+    1. click explorer on left sidebar
+    2. click notebooks in the file explorer
+        - We want to create the notebook in this folder
+    3. click the add file button at the top of the explorer to add a new file
+        - name it `foo.ipynb`
+        - click the new file and it should bring up a blank python jupyter notebook
 6. Test notebook setup
-    1. Right click and create `file testy.ipynb`
-    1. Use this code for testy.ipynb
+    1. Use this code for the first cell
 
         ```
         from pprint import pprint
@@ -40,16 +56,15 @@ jupyter/inotebooks
         df = pd.DataFrame({'name': ['Alice', 'Bob'], 'age': [25, 30]})
         print(df)
         ```
-7. Within github codespaces, the python env file is in top level of gitrepo.  
+7. On right hand side, it will say in the menu bar, `Select Kernel`
+    1. click the `Select Kernel` button
+    2. click `nbenv` which is recommended
+8. Within github codespaces, the python env file is in top level of gitrepo.  
     1. Put `.env` at top level
     2. place api key in this file
     3. add to `.gitignore`
 
 
-# VS Code General tips
-
-* use `ctrl-enter` to execute shells. Apparantly `shift-enter`` does not work.
-* use `b` to add a new code cell.
 
 
 ## vs code multiple tabs
