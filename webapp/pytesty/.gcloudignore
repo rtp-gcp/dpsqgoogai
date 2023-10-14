@@ -13,6 +13,9 @@
 .git
 .gitignore
 
+# things added by JFD
+README.md
+
 # Python pycache:
 __pycache__/
 # Ignored by the build system

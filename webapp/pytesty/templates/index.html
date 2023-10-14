@@ -11,33 +11,17 @@
 
   <h1>DEVPOST Fintech GOOG SQ AI Hackathon</h1>
 
-  <p> a test to see iff changed </p>
+  
 
-  <h2>Last 10 visits</h2>
-  {% for time in times %}
-    <p>{{ time }}</p>
-  {% endfor %}
-
-  <div>
-  <h2>env</h2>
-  {% if mytext %}
-    <p>{{mytext}}</p>
-    <p>No mytext</p>
-  {% endif %}
-  </div>
-
-  <div>
-  <h2>invoices</h2>
-  {% if myresult %}
-    <p>{{myresult}}</p>
-  {% else %}
-    <p>No myresult</p>
-  {% endif %}
-  </div>
 
 
   <div>
-    {{ mytable | safe }}
+    <h2>Invoices</h2>
+    {% if mytable %}
+      {{ mytable | safe }}
+    {% else %}
+      <p>---  No myresult -----</p>
+    {% endif %}
   </div>
 
 
