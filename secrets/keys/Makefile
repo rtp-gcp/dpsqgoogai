@@ -21,6 +21,7 @@ clean:
 
 
 encrypt:
+	gpg --output testy.md.gpg --encrypt --recipient davisjf@gmail.com testy.md
 	gpg --output keys.md.gpg --encrypt --recipient davisjf@gmail.com keys.md
 	gpg --output application_default_credentials.json.gpg --encrypt --recipient davisjf@gmail.com application_default_credentials.json
 
