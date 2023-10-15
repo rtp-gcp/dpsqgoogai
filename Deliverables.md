@@ -169,7 +169,7 @@ If we win funding we will use the money towards updating the app and putting in 
 
 ## Video demo link
 
-TODO: Add youtube link of demo
+demo [here](https://youtube.com/live/TJRgH5wX2mU)
 
 # Additional Info
 
