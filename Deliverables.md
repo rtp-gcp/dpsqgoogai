@@ -6,7 +6,7 @@
 RTP-GCP Project SAJ
 
 ## Elevator pitch
-SQ and GOOG AI APIs WebApp
+A comphrensive demo of Squareup, VertexAI and Google Cloud Platform App Engine.  It demos how to create automated item listings for the Square Sellers and a webapp to list current invoices.  It currently does not do much regarding the webapp, but it could be expanded upon later.  Perhaps its not an impressive app, but it gives working examples of how to use the various components.
 
 # Project Details
 

@@ -16,10 +16,21 @@ It demos
         * listing items
         * how to use the sandbox versus production environments
         * Endpoints used
-            * category  TODO: get real names
+            * catalog  
+                * create
+                * search
+                * query
+                * retrieve
+                * delete
             * inventory
-            * invoice
+                * list
+                * cancel
+                * delete
             * orders
+                * search
+                * create
+            * invoice
+                * list
         
 * Google Cloud Platform (GOOG/GCP) Vertex GenAI API for python
     * for automated test descriptions of item variations
