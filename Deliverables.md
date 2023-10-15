@@ -16,47 +16,54 @@ A comphrensive demo of Squareup, VertexAI and Google Cloud Platform App Engine. 
 
 #### Inspiration
 
-The RTP-GCP usergroup located in Durham, North Carolina, USA meets each weekend to work together to learn how to use Google Cloud Platform.  We were excited to join this hackathon since DEVPOST hackathons are a great way to focus on learning a technology.  Considering we knew nothing about the squareup API, this also seemed like a great oppurtunity to expand our knowledge of that!
+The RTP-GCP usergroup located in Durham, North Carolina, USA meets each weekend to work together to learn how to use Google Cloud Platform.  We were excited to join this hackathon since DEVPOST hackathons are a great way to focus on learning a technology.  Considering we knew nothing about the squareup API, this also seemed like a great oppurtunity to expand and apply our knowledge!
 
 #### What it does
 
-This app demonstrates how to build a GCP AppEngine WebApp that uses SQ and GOOG APIs to automate an online store front.  It does this by updating a SQ storefront with items for sale using AI generated product descriptions.  
+This combination of Jupyter Notebooks and App Engine webapp demonstrates how to use SQ and GOOG APIs to automate an online store front.  It does this by updating a SQ storefront with items for sale using AI generated product descriptions.  
 
 #### How we built it
 
-The hackathon entry was built in series of steps
+The hackathon entry was built in series of steps:
 
 ###### Step 1
 
 Requirements Analysis
 
-Read the project rules and examine the project awards to determine the set of primary characteristics the submission should contain.  The following table was generated:
+Read the project rules and examine the project awards to determine the set of primary characteristics the submission should contain.  The following table was generated with the following columns:
 
-| Requirement  Description                      |  Source                      |   Notes                  
-| ------------------------------------------| ---------------------- | ------------------- 
-| Create an APP                                         | Project Rules             | App integrates to SQ app store
-| New or updated                                      | Project Rules             | No prior knowledge so easy yes
-| Image/Audio                                           | Project Rules              | Use API to upload image
-| online experience                                   | Project Rules             | Simplify product listing
-| online experience                                   | Project Rules             | Simplify invoice generation
-| One SQ API                                             |                                     |                               
-|  [ ] Terminal   option                                |  Project Rules            |                               
-|  [ ] Subscriptions  option                        |  Project Rules            |                               
-|  [x] Invoices   option                                |  Project Rules            |  Requires inventory item    
-| One GOOG Foundation Model API      |                         |                                     |                                
-| [x] Text   option                                        |  Project Rules            |  Use Vertex AI  API to generate text                  
-| [ ] Chat  option                                         |  Project Rules            |                    
-| GOOG Payments API                             |  Project Judges         |                               
-| Idea                                                           |                                     |                                
-| Quality                                                      | Judges & Criteria      |  #2 goal make it work well                             
+* Requirement Description
+  * A capability our Minimal Viable Product (MVP) should fullfill
+* Source
+  * Where this requirement was found or dervied from more explicit requirements
+* Notes
+  * additional info regarding the requirement
+
+| Requirement  Description                      |  Source                      |   Notes      | COMPLETE            
+| ------------------------------------------| ---------------------- | ------------------- | -----------------
+| Create an APP                                         | Project Rules             | App integrates to SQ app store | TODO
+| New or updated                                      | Project Rules             | No prior knowledge so easy yes | [x]
+| Image/Audio                                           | Project Rules              | Use API to upload image | [x]
+| online experience                                   | Project Rules             | Simplify product listing | [x] automated
+| online experience                                   | Project Rules             | Simplify invoice generation | TODO
+| One SQ API                                             |                                     |     |                          
+|  [ ] Terminal   option                                |  Project Rules            |  not selected |                              
+|  [ ] Subscriptions  option                        |  Project Rules            |   not selected |                             
+|  [x] Invoices   option                                |  Project Rules            |  Requires inventory item? | [x]    
+| One GOOG Foundation Model API      |                         |                                     |          |                      
+| [x] Text   option                                        |  Project Rules            |  Use Vertex AI  API to generate text | [x]                 
+| [ ] Chat  option                                         |  Project Rules            |   not selected                 | 
+| GOOG Payments API                             |  Project Judges         |    Learn API - Not necessary its avaliable already | [x]                           
+| Idea                                                           |       If we can't make something elaborate at least make it work    | [x]                                
+| Quality                                                      | Judges & Criteria      |  #2 goal make it work well         | [x]                    
 | Implementation                                       | Judges & Criteria      |  #1 goal can we make it work                               
-| Potential Value                                         | Judges & Criteria      |                                           
-| Integrative Experience                           |  Judges & Criteria      |                                
-| Potential Impact                                      | Judges & Criteria      |   
-| Inventory API                                           | Derived Requirment  |   
-| Automate Listing                                     | Derived Requirment  |    
-| Automate Invoice                                    | Derived Requirment  |    
-| GCP Webapp - Use AppEngine            | Derived Requirement |  Implement in python so all APIs are consistent across notebooks and app, ease of use for integration in samples
+| Potential Value                                         | Judges & Criteria      |     If we can't make something elaborate at least make it work and a good basis for further development | [x]                                      
+| Integrative Experience                           |  Judges & Criteria      |   Make something that allows quick integration. Create notebooks for prototyping and a webapp all in the same programming language and use similar mechanism for API key security | [x]                             
+| Potential Impact                                      | Judges & Criteria      |   Although the Square Dashboard is very well designed and already has hooks for Images based upon item text, create a web app that allows users to have fewer controls for a steamlined workflow.  Pick an image, write some text, determine pricing, use AI to enhance text, automate emails for purchases sending AI generated text. ie. Thanks John Smith for buying item XXX, we hope you enjoy item XXX,YYY and yadda yadda. | [ ]
+| Inventory API                                           | Derived Requirment  |   We need to learn this in order to do items and invoice | [x]
+| Automate Listing                                     | Derived Requirment  |    ditto | [x] prototype  [ ] webapp
+| Automate Invoice                                    | Derived Requirment  |    | [x] prototype  [x] webapp
+| GCP Webapp - Use AppEngine            | Derived Requirement |  Implement in python so all APIs are consistent across notebooks and app, ease of use for integration in samples | [x] 
 
 
 #### Challenges we ran into
