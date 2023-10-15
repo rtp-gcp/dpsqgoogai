@@ -38,11 +38,11 @@ It demos
 ## Guide to the project
 
 * [Deliverables.md](Deliverables.md) contains text for the hackathon project submission
-* [notebooks](notebooks/README.md) contains jupyter notebooks for prototyping code using: 
+* [notebooks/](notebooks/README.md) contains jupyter notebooks for prototyping code using: 
     - [squareup API docs](https://developer.squareup.com/docs) 
     - [squareup API explorder](https://developer.squareup.com/explorer/square)
     - [vertex API](https://cloud.google.com/python/docs/reference/aiplatform/latest)
-* [webapp](webapp/README.md) contains code for the [webapp](https://devpost-goog-sq.uc.r.appspot.com/)
+* [webapp/](webapp/README.md) contains src for webapp running on GCP [here](https://devpost-goog-sq.uc.r.appspot.com/)
 * [docs](docs/README.md) contains notes on various components
 * [secrets](secrets/README.md) contains encrypted API keys and such
 
