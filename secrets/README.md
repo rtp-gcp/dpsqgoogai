@@ -1,3 +1,3 @@
 # Encrypted files
 
-Instructions on how to use gpg is [here](gpg.md)
+Instructions on how to use gpg are [here](gpg.md)
